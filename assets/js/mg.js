@@ -15,11 +15,15 @@ $('.card').on('click', function () {
     var firstCard = flipped.first();
     var secondCard = flipped.last();
 
-
-
-    if($('i').attr('id') == $('i').attr('id')){
-      console.log('shit works!!!')
-    }
-  }
-
+{
+      // console.log('shit works!!!')
+    } if ("div:contains('1')" != "div:contains('2')"){
+    $('.card').toggleClass("rotate")
+   console.log('aw snap!')
+}
+}
 });
+
+
+
+// if ( "div:contains('camera')" ).toggleClass( 'rotate' );
