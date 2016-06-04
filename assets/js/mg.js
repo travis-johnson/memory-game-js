@@ -14,14 +14,19 @@ $('.card').on('click', function () {
   if (flipped.length <= 2){
     var firstCard = flipped.first();
     var secondCard = flipped.last();
-
+    setTimeout(flipped, 2000);
 {
-} if  ("div:contains('1')" != "div:contains('2')"){
-    $('.card').toggleClass("rotate")
+
+} if  ("div:contains('1')" && "div:contains('2')"){
+    $('.card').toggleClass("rotate");
    console.log('aw snap!')
 }
 }
 });
+
+
+
+
 
 
 // $('.card').on('click', function () {
