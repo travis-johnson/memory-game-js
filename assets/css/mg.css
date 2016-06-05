@@ -62,7 +62,7 @@ line-height: normal;
   text-align: center;
   line-height: 300px;
   color: white;
-  transition: all .4s linear;
+  transition: all 1s linear;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 8%;
@@ -92,7 +92,7 @@ line-height: normal;
 .rotate {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
-
+  transition-duration: 1s;
 }
 
 
