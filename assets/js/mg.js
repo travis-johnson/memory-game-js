@@ -9,9 +9,10 @@
 
 
 $('.card').on('click', function () {
+  $(this).addClass("rotate");
   if  ("div:contains('1')" != "div:contains('2')"){
-     $('.card').addClass("rotate");
-     
+     setTimeout(function(){ $('.front').addClass("rotate") }, 2000);
+
     console.log('aw snap!')
  }
  });
