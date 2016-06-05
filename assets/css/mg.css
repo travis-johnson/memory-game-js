@@ -49,6 +49,7 @@ line-height: normal;
 .card {
   width: 120px;
   height: 120px;
+  margin: 3px 2px;
   position: relative;
   -webkit-transition: all .4s linear;
   transition: all .4s linear;
@@ -66,7 +67,7 @@ line-height: normal;
   transition: all 1s linear;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border-radius: 8%;
+  border-radius: 85%;
 
 }
 .back p{

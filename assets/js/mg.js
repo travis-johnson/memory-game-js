@@ -19,14 +19,17 @@ $('.card').on('click', function () {
      setTimeout(function(){ $('.rotate').removeClass("rotate") }, 500);
 
     console.log('aw snap!')
- } else(firstCard.text() === secondCard.text())
+ }  else (firstCard.text() === secondCard.text()) 
 
  }
  }
-
  });
 
 
+
+
+
+//CLOCK//
 var minTime = document.getElementById("minute");
 var secTime = document.getElementById("seconds");
 var total = 0;
