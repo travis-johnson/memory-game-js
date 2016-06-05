@@ -16,12 +16,14 @@ $('.card').on('click', function () {
       var secondCard = flipped.last();
   {
   if (firstCard.text() != secondCard.text()) {
-     setTimeout(function(){ $('.card').toggleClass("rotate") }, 500);
+     setTimeout(function(){ $('.rotate').removeClass("rotate") }, 500);
 
     console.log('aw snap!')
+ } else(firstCard.text() === secondCard.text())
+
  }
  }
- }
+
  });
 
 
