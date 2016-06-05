@@ -2,7 +2,7 @@
 .header{
   background-color: #3f51b5;
 }
-#time {
+.time {
   text-align: right;
   margin-right: 300px;
   font-family: 'Orbitron', sans-serif;
@@ -43,11 +43,12 @@ line-height: normal;
 }
 
 /*GAME BOARD*/
-
+.row{
+  display: inline;
+}
 .card {
   width: 120px;
   height: 120px;
-  margin: 0 auto;
   position: relative;
   -webkit-transition: all .4s linear;
   transition: all .4s linear;
@@ -68,6 +69,10 @@ line-height: normal;
   border-radius: 8%;
 
 }
+.back p{
+  display: none;
+}
+
 
 .face i {
   font-size: 3em;
@@ -75,6 +80,7 @@ line-height: normal;
   padding-top: 29%;
   margin: 1px -21px;
   position: absolute;
+  backface-visibility: hidden;
 }
 
 .front {
@@ -85,15 +91,18 @@ line-height: normal;
 .back {
   z-index: 1;
   background-color: tomato;
+  /*border-radius: 8%;*/
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
-.rotate {
+.rotate  {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
-  transition-duration: 1s;
-}
+
+  }
+
+
 
 
 
