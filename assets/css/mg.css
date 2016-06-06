@@ -1,0 +1,183 @@
+/*BODY AND HEADER*/
+.header{
+  background-color: #3f51b5;
+}
+#time {
+  text-align: right;
+  padding: 0 12em;
+  margin-right: 300px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.game-wrapper {
+  background: #3F51B5;
+  height: 100vh;
+  width: 100%;
+  padding-top: 4%;
+  padding-left: 15%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+#logo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 4em;
+  margin: 0 47px;
+  width: 100%;
+  line-height: 1.4em;
+  text-align: center;
+  font-weight: 400;
+  background: #3F51b5;
+  color: white;
+}
+
+#hearts{
+display: flex;
+color: white;
+margin: 0 auto;
+width: 100%;
+padding-left: 5%;
+background: #3F51b5;
+list-style: none;
+line-height: normal;
+}
+
+/*GAME BOARD*/
+.row{
+  display: inline;
+}
+.card {
+  width: 120px;
+  height: 120px;
+  margin: 3px 2px;
+  position: relative;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 300px;
+  color: white;
+  transition: all 1s linear;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 85%;
+
+}
+.back p{
+  display: none;
+}
+
+
+.face i {
+  font-size: 3em;
+  text-align: center;
+  padding-top: 29%;
+  margin: 1px -21px;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  background-color: tomato;
+  z-index: 2;
+}
+
+.back {
+  z-index: 1;
+  background-color: tomato;
+  /*border-radius: 8%;*/
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.rotate  {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*table {
+  margin: 16px 177px;
+}
+
+
+.card, .card-flipped {
+  width: 120px;
+  height: 120px;
+  background: rgba(255,0,0,.5);
+  display: flex;
+  z-index: 900;
+  border-radius: 8%;
+  display: inline-flex;
+  margin: 2px 2px;
+  /*backface-visibility: hidden;*/
+  /*transform: rotateY(180deg);*/
+
+/*}*/
+
+/*.card-flipped {
+  width: 120px;
+  background: #7986cb;
+  display: flex;
+  top:0;
+  z-index: 800;
+  transform: rotateY(180deg);
+  transition:  background .5s, transform 1s;
+  border-radius: 8%;
+  display: inline-flex;
+  margin: 2px 2px;
+
+}*/
+
+
+
+/*.card i {
+  font-size: 3em;
+  text-align: center;
+  padding-top: 29%;
+  margin: 0 auto;
+  border-radius: 8%;
+}
+
+.card-flipped i{
+  color: transparent;
+}*/
+
+/*input:not(:checked) +.card i{
+  background: #7986cb;
+  color: #7986cb;
+}
+
+input:checked + .card {
+transform: rotateY(180deg);
+
+}*/
