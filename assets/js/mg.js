@@ -30,6 +30,19 @@ $('.card').on('click', function () {
 
 
 //CLOCK//
+
+
+
+
+var sec = 0;
+function pad ( val ) { return val > 9 ? val : "0" + val; }
+setInterval( function(){
+    $("#seconds").html(pad(++sec%60));
+    $("#minute").html(pad(parseInt(sec/60,10)));
+}, 1000);
+
+
+
 // var minTime = document.getElementById("minute");
 // var secTime = document.getElementById("seconds");
 // var total = 0;
@@ -56,12 +69,6 @@ $('.card').on('click', function () {
 // };
 
 
-var sec = 0;
-function pad ( val ) { return val > 9 ? val : "0" + val; }
-setInterval( function(){
-    $("#seconds").html(pad(++sec%60));
-    $("#minute").html(pad(parseInt(sec/60,10)));
-}, 1000);
 
 
 

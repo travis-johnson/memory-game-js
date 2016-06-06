@@ -1,6 +1,6 @@
 /*BODY AND HEADER*/
 .header{
-  background-color: #3f51b5;
+  background-color: #fdd358;
 }
 #time {
   text-align: right;
@@ -10,7 +10,7 @@
 }
 
 .game-wrapper {
-  background: #3F51B5;
+  background: #fdd358;
   height: 100vh;
   width: 100%;
   padding-top: 4%;
@@ -28,7 +28,7 @@
   line-height: 1.4em;
   text-align: center;
   font-weight: 400;
-  background: #3F51b5;
+  background: #fdd358;
   color: white;
 }
 
@@ -38,7 +38,7 @@ color: white;
 margin: 0 auto;
 width: 100%;
 padding-left: 5%;
-background: #3F51b5;
+background: #fdd358;
 list-style: none;
 line-height: normal;
 }
