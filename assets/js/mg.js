@@ -19,7 +19,7 @@ $('.card').on('click', function () {
      setTimeout(function(){ $('.rotate').removeClass("rotate") }, 500);
 
     console.log('aw snap!')
- }  else (firstCard.text() === secondCard.text()) 
+ }  else (firstCard.text() === secondCard.text())
 
  }
  }
@@ -30,34 +30,53 @@ $('.card').on('click', function () {
 
 
 //CLOCK//
-var minTime = document.getElementById("minute");
-var secTime = document.getElementById("seconds");
-var total = 0;
-setInterval(setTime, 1000);
-
-function setTime()
-{
-  ++total;
-  secTime.innerHTML = pad(total%60);
-  minTime.innerHTML = pad(parseInt(total/60));
-}
-
-function pad(val)
-{
-  var valString = val + "";
-  if (valString.length < 2)
-{
-  return "0" + valString;
-}
-else
-{
-    return valString;
-  }
-};
-
-
+// var minTime = document.getElementById("minute");
+// var secTime = document.getElementById("seconds");
+// var total = 0;
+// setInterval(setTime, 1000);
+//
+// function setTime()
+// {
+//   ++total;
+//   secTime.innerHTML = pad(total%60);
+//   minTime.innerHTML = pad(parseInt(total/60));
+// }
+//
+// function pad(val)
+// {
+//   var valString = val + "";
+//   if (valString.length < 2)
+// {
+//   return "0" + valString;
+// }
+// else
+// {
+//     return valString;
+//   }
+// };
 
 
+var sec = 0;
+function pad ( val ) { return val > 9 ? val : "0" + val; }
+setInterval( function(){
+    $("#seconds").html(pad(++sec%60));
+    $("#minute").html(pad(parseInt(sec/60,10)));
+}, 1000);
+
+
+
+
+//
+// var timer = setInterval(count, 1000);
+// var totalSeconds = 00;
+// function count() {
+// ++totalSeconds;
+// var hour = Math.floor(totalSeconds /3600);
+// var minute = Math.floor((totalSeconds - hour*3600)/60);
+// var seconds = totalSeconds - (hour*3600 + minute*60);
+//
+// document.getElementById("time").innerHTML = minute + ":" + seconds;
+// }
 
 
 
